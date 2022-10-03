@@ -120,3 +120,24 @@ temps.index(95)
 temps.count(10)
 
 Values = [n for n in range(100,200)]
+
+# Portfolio tasks
+name = input("What is your name");
+print("hello " + name);
+
+tempc = (float(input("Temperatutre in degree celsius: ")));
+tempf = (tempc*9/5)+32;
+
+print(str(tempf) + " degrees Fahreneit");
+
+studNum = int(input("how mant students?: "));
+grpSize = int(input("how large do you want the groups?: "));
+grpNum = studNum // grpSize;
+
+print("groups = ", grpNum, "remaining = ", studNum - (grpNum * grpSize));
+
+sweetNum = int(input("how many sweets?: "));
+studNum = int(input("how many students?: "));
+
+sweetStud = sweetNum//studNum;
+print("sweets per student = ", sweetStud, "remaining = ", sweetNum - (sweetStud * studNum));
