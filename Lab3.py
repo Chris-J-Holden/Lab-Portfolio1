@@ -67,14 +67,16 @@ for n in names:
 for m in range(2, 10, 2):
     print(m, "to the power of", m, "=", m ** m);
 
-numbers = [10, 20 , 30, 90, 200, 30, 22, 11];
-total = 0;
+numbers = [10, 20, 30, 90, 200, 30, 22, 11];
+total = 0
+
 for n in numbers:
     total += n;
+    print(total)
     if n > 100:
-        break;
+        break
 else:
-    print("all numbers processed");
+    print("hey")
 
 # Exercises
 num = int(input("enter a number between 1 and 10: "));
