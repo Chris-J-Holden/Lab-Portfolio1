@@ -72,9 +72,16 @@ hypot = lambda a,b : math.sqrt(a * a + b * b)
 
 print(type(hypot(2,2)))
 
-to_seconds = lambda hours = 0, minutes = 0: print((hours*3600)+(minutes*60))
 
-to_seconds(2)
+to_seconds = lambda hours = 0, minutes = 0: print((hours*3600)+(minutes*60), "seconds")
+
+hours = input("enter hours: ")
+minutes  = input("enter minuites: ")
+if hours == "":
+    hours = 0
+if minutes == "":
+    minutes = 0
+to_seconds(int(hours), int(minutes))
 
 def do_something(prefix="Message", prompt, answer=False):
     print(prompt, prefix, answer)
@@ -122,13 +129,13 @@ def cutStr(msg):
 
 print(cutStr("HELLO HOW ARE YOU!"))
 
-def cToF(a):
+def celToFar(a):
     return (a*9/5)+32
 
-def fToC(a):
+def farToCel(a):
     return (a-32)*5/9
 
-def cToF(a):
+def celToFar(a):
     degc=a.upper()
     if "C" in a:
         numc = a[0:len(a)-1]
@@ -144,4 +151,5 @@ def minMaxMean(*temps):
     print(min(temps))
     print(max(temps))
     print(statistics.mean(temps))
+
 minMaxMean(12,19,243,2,44,2)
